@@ -28,14 +28,14 @@
 #define DL_LINII 1024 /* Dlugosc buforow pomocniczych */
 
 /************************************************************************************
- * Funkcja wczytuje obraz PGM z pliku do tablicy       	       	       	       	    *
- *										                                                              *
- * \param[in] plik_we uchwyt do pliku z obrazem w formacie PGM			                *
- * \param[out] obraz tablica, do ktorej zostanie zapisany obraz		                  *
- * \param[out] wymx szerokosc obrazka						                                    *
- * \param[out] wymy wysokosc obrazka						                                    *
- * \param[out] szarosci liczba odcieni szarosci					                            *
- * \return liczba wczytanych pikseli				                                        *
+ * Funkcja wczytuje obraz PGM z pliku do tablicy                                    *
+ *                                                                                  *
+ * \param[in] plik_we uchwyt do pliku z obrazem w formacie PGM                      *
+ * \param[out] obraz tablica, do ktorej zostanie zapisany obraz                     *
+ * \param[out] wymx szerokosc obrazka                                               *
+ * \param[out] wymy wysokosc obrazka                                                *
+ * \param[out] szarosci liczba odcieni szarosci                                     *
+ * \return liczba wczytanych pikseli                                                *
  ************************************************************************************/
 
 int czytaj(FILE *plik_we, int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -100,14 +100,14 @@ int czytaj(FILE *plik_we, int obraz[MAX][MAX], int *wymx, int *wymy, int *szaros
 }
 
 /************************************************************************************
- * Funkcja zapisuje obraz PGM do pliku z tablicy       	       	       	       	    *
- *										                                                              *
- * \param[out] plik_wy uchwyt do pliku w ktorym zostanie zapisany obraz PGM			    *
- * \param[in] obraz tablica, z ktorej zostanie odczytany obraz		                  *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
- * \return liczba zapisanych pikseli						                                    *
+ * Funkcja zapisuje obraz PGM do pliku z tablicy                                    *
+ *                                                                                  *
+ * \param[out] plik_wy uchwyt do pliku w ktorym zostanie zapisany obraz PGM         *
+ * \param[in] obraz tablica, z ktorej zostanie odczytany obraz                      *
+ * \param[in] wymx szerokosc obrazu                                                 *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
+ * \return liczba zapisanych pikseli                                                *
  ************************************************************************************/
 
 int zapisz(FILE *plik_wy, int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -138,12 +138,12 @@ int zapisz(FILE *plik_wy, int obraz[MAX][MAX], int *wymx, int *wymy, int *szaros
 }
 
 /************************************************************************************
- * Funkcja wykonuje operacje negatywu na tabliy z zapisanym obrazem PGM        	    *
- *										                                                              *
- * \param[out] obraz tablica, w ktorej zostanie wykonana operacja negatywu   	      *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * Funkcja wykonuje operacje negatywu na tabliy z zapisanym obrazem PGM             *
+ *                                                                                  *
+ * \param[out] obraz tablica, w ktorej zostanie wykonana operacja negatywu          *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void negatyw(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -160,11 +160,11 @@ void negatyw(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
 
 /************************************************************************************
  * Funkcja wykonuje operacje konturowania na tabliy z zapisanym obrazem PGM         *
- *										                                                              *
+ *                                                                                  *
  * \param[out] obraz tablica, w ktorej zostanie wykonana operacja konturowania      *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void kontur(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -182,12 +182,12 @@ void kontur(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
 }
 
 /************************************************************************************
- * Funkcja wykonuje rozciaganie histogramu na tabliy z zapisanym obrazem PGM   	    *
- *										                                                              *
+ * Funkcja wykonuje rozciaganie histogramu na tabliy z zapisanym obrazem PGM        *
+ *                                                                                  *
  * \param[out] obraz tablica, w ktorej zostanie wykonane rozciaganie histogramu     *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void rozciaganie_histogramu(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -222,12 +222,12 @@ void rozciaganie_histogramu(int obraz[MAX][MAX], int *wymx, int *wymy, int *szar
 }
 
 /************************************************************************************
- * Funkcja wykonuje korekcje gamma na tabliy z zapisanym obrazem PGM   	            *
- *										                                                              *
+ * Funkcja wykonuje korekcje gamma na tabliy z zapisanym obrazem PGM                *
+ *                                                                                  *
  * \param[out] obraz tablica, w ktorej zostanie wykonana korekcja gamma             *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void korekcja_gamma(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -259,12 +259,12 @@ void korekcja_gamma(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
 }
 
 /************************************************************************************
- * Funkcja wykonuje rozmycie poziome na tabliy z zapisanym obrazem PGM   	          *
- *										                                                              *
+ * Funkcja wykonuje rozmycie poziome na tabliy z zapisanym obrazem PGM              *
+ *                                                                                  *
  * \param[out] obraz tablica, w ktorej zostanie wykonane rozmycie poziome           *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void rozmycie_poziome(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -312,12 +312,12 @@ void rozmycie_poziome(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
 }
 
 /************************************************************************************
- * Funkcja wykonuje operacje progowaniana tabliy z zapisanym obrazem PGM   	        *
- *										                                                              *
+ * Funkcja wykonuje operacje progowaniana tabliy z zapisanym obrazem PGM            *
+ *                                                                                  *
  * \param[out] obraz tablica, w ktorej zostanie wykonane progowanie                 *
- * \param[in] wymx szerokosc obrazka						                                    *
- * \param[in] wymy wysokosc obrazka						                                      *
- * \param[in] szarosci liczba odcieni szarosci					                            *
+ * \param[in] wymx szerokosc obrazka                                                *
+ * \param[in] wymy wysokosc obrazka                                                 *
+ * \param[in] szarosci liczba odcieni szarosci                                      *
  ************************************************************************************/
 
 void progowanie(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
@@ -361,8 +361,8 @@ void progowanie(int obraz[MAX][MAX], int *wymx, int *wymy, int *szarosci)
 }
 
 /************************************************************************************
- * Funkcja wyswietlajaca obraz PGM                                        	        *
- *										                                                              *
+ * Funkcja wyswietlajaca obraz PGM                                                  *
+ *                                                                                  *
  * \param[in] n_pliku nazwa obrazu PGM ktory ma byc wyswietlony                     *
  ************************************************************************************/
 
