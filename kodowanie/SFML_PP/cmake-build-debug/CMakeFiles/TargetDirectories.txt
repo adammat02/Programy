@@ -1,0 +1,3 @@
+/home/amatusia/CLionProjects/SFML_PP/cmake-build-debug/CMakeFiles/SFML_PP.dir
+/home/amatusia/CLionProjects/SFML_PP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/amatusia/CLionProjects/SFML_PP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
